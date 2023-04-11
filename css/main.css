@@ -48,7 +48,6 @@ main section#card {
 @media (min-width: 840px) {
   main section#card {
     grid-area: card;
-    height: -webkit-fit-content;
     height: -moz-fit-content;
     height: fit-content;
     align-self: center;
@@ -120,5 +119,4 @@ main section#primary a {
     display: inline-block;
     padding: 15px 60px;
   }
-}
-/*# sourceMappingURL=main.css.map */
+}/*# sourceMappingURL=main.css.map */
