@@ -1,17 +1,22 @@
-$colors: (primary: #8532a8, primary-light: lighten(#8532a8, 40%), primary-dark: darken(#8532a8, 40%), accent: #fff6bb);
+$colors: (
+	primary: #327da8,
+	primary-light: lighten(#327da8, 40%),
+	primary-dark: darken(#327da8, 40%),
+	accent: #fff6bb,
+);
 
 $padding: 15px;
 $borders: 15px;
 
 @function color($color-name) {
-  	@return map-get($colors, $color-name);
+	@return map-get($colors, $color-name);
 }
 
 $desktop: 840px;
 
 @mixin desktop {
-  	@media (min-width: #{$desktop}) {
-	  	@content;
+	@media (min-width: #{$desktop}) {
+		@content;
 	}
 }
 
@@ -21,9 +26,9 @@ html {
 }
 
 body {
-	font-family: 'Montserrat', sans-serif;
-    margin: 0;
-  
+	font-family: "Montserrat", sans-serif;
+	margin: 0;
+
 	#bg {
 		clip-path: polygon(100% 0, 100% 82%, 45% 100%, 0 100%, 0 0);
 		background-color: color(primary);
@@ -36,7 +41,7 @@ body {
 			clip-path: polygon(0 0, 75% 0, 55% 100%, 0% 100%);
 		}
 	}
-  
+
 	header a {
 		color: #fff;
 		text-decoration: none;
@@ -58,7 +63,7 @@ main {
 		padding: 20px;
 		margin: 1em auto;
 		border-radius: $borders;
-		box-shadow: 0 10px 30px rgba(0, 0, 0, .2);
+		box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
 		width: 80%;
 
 		@include desktop {
@@ -72,7 +77,7 @@ main {
 			list-style-type: none;
 			margin: 0;
 			padding: 0;
-			
+
 			li {
 				margin-bottom: 10px;
 
@@ -93,7 +98,7 @@ main {
 			}
 		}
 	}
-	
+
 	section#primary {
 		color: #fff;
 		padding: $padding;
@@ -113,7 +118,7 @@ main {
 			@include desktop {
 				width: 30%;
 				font-size: 4em;
-				line-height: .9em;
+				line-height: 0.9em;
 			}
 		}
 
